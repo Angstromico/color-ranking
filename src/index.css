@@ -65,6 +65,10 @@ select:focus {
   color: rgb(179, 157, 37);
   font-weight: 700;
   margin-bottom: 2rem;
+  font-size: 2rem;
+}
+.color-form label {
+  font-size: 1.5rem;
 }
 .color-form button {
   margin: 1rem 0;
