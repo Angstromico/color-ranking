@@ -16,6 +16,22 @@ h3 {
   text-transform: capitalize;
   text-align: center;
 }
+h1 {
+  font-size: 3.5rem;
+}
+.header {
+  transition: color 1s ease-in-out;
+}
+@media (max-width: 500px) {
+  h1 {
+    font-size: 2.5rem;
+  }
+}
+@media (max-width: 300px) {
+  h1 {
+    font-size: 2rem;
+  }
+}
 input:focus,
 textarea:focus,
 select:focus {
