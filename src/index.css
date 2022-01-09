@@ -1,0 +1,108 @@
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+h1,
+h2,
+h3 {
+  text-transform: capitalize;
+  text-align: center;
+}
+input:focus,
+textarea:focus,
+select:focus {
+  outline: none;
+}
+.start-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 2rem 0;
+}
+.start-container:hover {
+  cursor: pointer;
+}
+.start-container button {
+  padding: 0.6rem;
+  border: none;
+  transition: all 1s ease-in-out;
+}
+.start-container button:hover {
+  cursor: pointer;
+  color: yellow;
+  background-color: red;
+  transform: scale(1.1);
+}
+.color-form {
+  margin: 2rem auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.color-form input {
+  display: block;
+  width: 70%;
+  margin: 1rem auto;
+  border-radius: 5px;
+  padding: 1rem;
+  border: none;
+  background-color: rgb(247, 227, 190);
+  height: 5rem;
+}
+.color-form input:focus {
+  border: 1px solid gold;
+}
+.color-form legend {
+  color: rgb(179, 157, 37);
+  font-weight: 700;
+  margin-bottom: 2rem;
+}
+.color-form button {
+  margin: 1rem 0;
+  border-radius: 5px;
+  padding: 1rem 1.1rem;
+  color: wheat;
+  background-color: rgb(30, 30, 187);
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: bold;
+  border: none;
+  transition: all 1s ease-in-out;
+}
+.color-form button:hover {
+  cursor: pointer;
+  background-color: rgb(18, 18, 136);
+  transform: scale(1.05);
+}
+
+.appear {
+  animation: appearing 5s;
+}
+.disappear {
+  animation: dissapearing 5s;
+}
+@keyframes appearing {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes dissapearing {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
